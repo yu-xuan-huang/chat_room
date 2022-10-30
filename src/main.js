@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
+import ViewUIPlus from 'view-ui-plus'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import 'view-ui-plus/dist/styles/viewuiplus.css'
+const app = createApp(App)
+app.use(ViewUIPlus).mount('#app')
