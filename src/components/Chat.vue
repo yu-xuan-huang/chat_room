@@ -60,7 +60,7 @@
 </template>
 <script>
 export default {
-  name: "HelloWorld",
+  name: "ChatSample",
   data() {
     return {
       uid: "",
@@ -104,7 +104,7 @@ export default {
     conWebSocket() {
       let vm = this;
       if (window.WebSocket) {
-        vm.socket = new WebSocket("wss://yuxuanbb.herokuapp.com/");
+        vm.socket = new WebSocket("wss://chat-sample-knyh.onrender.com");
         let socket = vm.socket;
         socket.onopen = function () {
           console.log("連接伺服器成功");
